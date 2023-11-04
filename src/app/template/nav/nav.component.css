@@ -1,0 +1,46 @@
+/* Estilo da barra de navegação */
+.navbar {
+  background-color: #3498db; /* Cor de fundo */
+  border-radius: 0; /* Remover bordas arredondadas */
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo do logotipo do site */
+.navbar-brand {
+  color: #33302D; /* Cor do texto do logotipo */
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Estilo dos links do menu */
+.navbar-nav .nav-link {
+  color: #8F6B49; /* Cor dos links do menu */
+  font-weight: 500;
+  margin-right: 20px; /* Espaçamento entre os links */
+  transition: color 0.3s; /* Efeito de transição suave */
+}
+
+/* Estilo dos links do menu ao passar o mouse */
+.navbar-nav .nav-link:hover {
+  color: #f1c40f; /* Cor ao passar o mouse */
+}
+
+/* Estilo do botão de menu de hambúrguer */
+.navbar-toggler {
+  border: none; /* Remover borda do botão */
+  background-color: transparent; /* Fundo transparente */
+  position: absolute; /* Posicionamento absoluto */
+  top: 10px; /* Posicionamento vertical personalizado */
+  right: 20px; /* Posicionamento horizontal personalizado */
+}
+
+/* Estilo do botão de menu de hambúrguer ao passar o mouse */
+.navbar-toggler:hover {
+  background-color: #f1c40f; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilo do botão de menu de hambúrguer ícone */
+.navbar-toggler-icon {
+  background-color: #fff; /* Cor do ícone do menu */
+}
