@@ -1,0 +1,33 @@
+.home-container {
+    text-align: center;
+    padding: 189px;
+}
+.home-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+.home-description {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Estilos CSS para o botão "Converter" */
+.btn.btn-primary {
+  background-color: #ff7b00; /* Cor de fundo do botão (azul) */
+  color: #fff; /* Cor do texto no botão (branco) */
+  border: none; /* Remover a borda do botão */
+  padding: 10px 20px; /* Espaçamento interno (altura x largura) */
+  font-size: 18px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+/* Estilos do botão ao passar o mouse */
+.btn.btn-primary:hover {
+  background-color: #855200; /* Cor de destaque ao passar o mouse (um tom mais escuro de azul) */
+}
+
+/* Estilos para o botão quando está pressionado */
+.btn.btn-primary:active {
+  background-color: #804d00; /* Cor quando o botão está pressionado (um tom ainda mais escuro de azul) */
+}
