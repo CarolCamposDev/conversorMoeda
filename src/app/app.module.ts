@@ -12,7 +12,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { CurrencyTableComponent } from './currency-table/currency-table.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,7 +22,7 @@ import { HttpClient } from '@angular/common/http';
     NavComponent,
     FooterComponent,
     HomeComponent,
-    CurrencyTableComponent,
+    CurrencyTableComponent
   ],
 
   imports: [
@@ -33,7 +33,7 @@ import { HttpClient } from '@angular/common/http';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

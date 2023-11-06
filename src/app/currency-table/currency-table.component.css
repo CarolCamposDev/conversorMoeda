@@ -1,0 +1,53 @@
+
+.search {
+  text-align: center;
+  margin: 20px;
+}
+
+
+.mat-form-field {
+  width: 100%;
+}
+
+
+.custom-table-container {
+  background-color: #f4a261; 
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.custom-table {
+  width: 100%;
+}
+
+
+.blue-header {
+  background-color: #6d6875; 
+  color: rgb(59, 59, 59);
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.blue-cell {
+  background-color: #6d6875; 
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+
+.paginator-container {
+  text-align: center;
+  margin: 20px;
+}
+
+
+mat-paginator {
+  background-color: #f4a261; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

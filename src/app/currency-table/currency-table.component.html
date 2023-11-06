@@ -1,10 +1,28 @@
-<table>
-  <tr>
-    <th>Code</th>
-    <th>Name</th>
-  </tr>
-  <tr *ngFor="let currency of currencies">
-    <td>{{ currency.code }}</td>
-    <td>{{ currency.name }}</td>
-  </tr>
-</table>
+ <div class="search">
+    <mat-form-field>
+      <mat-label>Search</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. USD" #input>
+    </mat-form-field>
+  </div>
+
+  <div class="custom-table-container">
+    <table mat-table [dataSource]="dataSource" matSort class="custom-table">
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="blue-header"> Código </th>
+        <td mat-cell *matCellDef="let row" class="blue-cell"> {{row.symbol}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class="blue-header"> Nome </th>
+        <td mat-cell *matCellDef="let row" class="blue-cell"> {{row.name}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+
+  <div class="paginator-container">
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100, 200]" aria-label="Select page of users"></mat-paginator>
+  </div>
+
